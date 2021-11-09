@@ -16,7 +16,7 @@ public class CountClient {
 
     public CountResponse stringStatistics(CountRequest statisticsRequest) {
         RequestEntity<CountRequest> request = RequestEntity
-                .post("http://localhost:8080/request%22").body(statisticsRequest);
+                .post("http://localhost:8080/request").body(statisticsRequest);
 
         return restTemplate.exchange(request, CountResponse.class).getBody();
     }
