@@ -1,12 +1,12 @@
-#POST - (/request)
+# POST - (/request)
 Port: 8090
 
 Uses second application on port: 8080
 
-##Request Body - structure
+## Request Body - structure
 { String string, String expression, String format }
 
-##Response Body
+## Response Body
 ### TXT
 ```
     Uppercase letters: %d,
